@@ -1,0 +1,26 @@
+.movie-banner {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 32px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.24);
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  padding: 8px 0px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 8px 0px;
+}
+
+.spacer {
+  padding-top: 128px;
+}

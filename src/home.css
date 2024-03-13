@@ -1,0 +1,32 @@
+.site-body {
+  width: calc(100% - 16px);
+  padding: 8px;
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-list {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 32px;
+  max-width: 100%;
+}
+
+@media (min-width: 600px) {
+  .movie-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .movie-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .movie-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
