@@ -11,7 +11,7 @@ function App() {
   const movies = movie
   const [searchWord, setSearchWord] = useState("");
   const filteredMovies = movies.filter(m => m.title.toLowerCase().includes(searchWord.toLowerCase()));
-  console.log(filteredMovies);
+
 
   function handleChange(e) {
     setSearchWord(e.target.value);

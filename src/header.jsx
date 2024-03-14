@@ -7,11 +7,18 @@ function Header({ searchWord, onChange }) {
   return (
     <>
       <div className="header-container">
-        {/* inline styling because Link element */}
-        <Link to={'/'} style={{ textDecoration: 'none', color: 'white', flex: 1, paddingLeft: '16px' }}>
-          <h2>yt-movies</h2>
+        <div className='title-container'>
 
-        </Link >
+          {/* inline styling because Link element */}
+          <Link to={'/'} style={{
+            textDecoration: 'none',
+            color: 'white',
+            paddingLeft: '16px',
+            width: 'fit-content',
+          }}>
+            <h2>YT-Movies</h2>
+          </Link >
+        </div>
         {/* <ul>
           <li>malayalam</li>
           <li>tamil</li>
@@ -22,12 +29,11 @@ function Header({ searchWord, onChange }) {
           <SearchIcon />
           <input value={searchWord} type='text' placeholder='search' onChange={onChange}></input>
         </div>
-
-        <h3>about</h3>
       </div >
     </>
   )
 }
+
 
 
 export default Header
