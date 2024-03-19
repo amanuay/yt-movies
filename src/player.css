@@ -24,3 +24,16 @@ iframe {
   aspect-ratio: 16/9;
   border-radius: 16px;
 }
+
+@media (max-width: 600px) {
+  iframe {
+    width: calc(100% - 32px);
+    border-radius: 8px;
+  }
+
+  .back {
+    display: flex;
+    align-items: center;
+    padding: 16px 16px;
+  }
+}
