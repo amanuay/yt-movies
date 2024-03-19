@@ -22,9 +22,12 @@
 }
 
 .header-container h2 {
-  padding-left: 16px;
-  font-weight: 400;
+  padding-left: 32px;
+  padding-right: 16px;
+  font-weight: 800;
+  color: red;
   width: fit-content;
+  border-radius: 4px;
 }
 
 .header-container h3 {

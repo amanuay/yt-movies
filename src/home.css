@@ -1,6 +1,6 @@
 .site-body {
-  width: calc(100% - 16px);
-  padding: 8px;
+  width: calc(100% - 32px);
+  padding: 16px;
   padding-top: 64px;
   display: flex;
   flex-direction: column;

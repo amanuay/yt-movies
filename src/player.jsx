@@ -1,5 +1,6 @@
 import './player.css';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 function Player() {
   const { id } = useParams();
@@ -7,12 +8,22 @@ function Player() {
   const videoLink = `https://youtube.com/embed/${videoId}`;
 
   return (
-    <div className='video-container'>
-      <iframe src={videoLink} allowFullScreen ></iframe>
+    <div className='wrapper'>
+      <div className='back'> <Link to={'/'} style={{
+        textDecoration: 'none',
+        color: 'white',
+        display: 'flex',
+        alignItems: 'center'
+      }}><ArrowBackIcon />back</Link></div>
+      <div className='video-container'>
+
+        <iframe src={videoLink} allowFullScreen ></iframe>
+
+      </div>
     </div>
   )
 }
 
-
-
 export default Player
+
+
